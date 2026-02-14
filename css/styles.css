@@ -1,5 +1,6 @@
 body{
     padding-bottom: 500px;
+    background-color: #f5edf2;
 }
 
 /* 1 - flex */
@@ -60,4 +61,50 @@ body{
 
 .end{
     justify-content: end;
+}
+
+/* Align items */
+.align-center,
+.flex-end,
+.stretch{
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 1px solid blue;
+}
+
+.align-center .box,
+.flex-end .box,
+.stretch .box{
+    width: 50px;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.flex-end{
+    align-items: flex-end;
+}
+
+.stretch{
+    align-items: stretch;
+}
+
+.stretch .box{
+    height: auto;
+}
+
+/* Gap */
+.gap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid green;
+    padding: 10px;
+    gap: 10px;
+}
+
+.gap .box{
+    width: 32%;
 }
